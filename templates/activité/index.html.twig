@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+{% block title %}Activité - OMAH Lab{% endblock %}
+{% block javascripts %}
+    {{ encore_entry_script_tags('accueil') }}
+{% endblock %}
+{% block body %}
+{% include "header.html.twig" %}
+    <main class="activity_main">
+        <div class="activity_container">
+            <div class="activity_card">
+                <img src="https://via.placeholder.com/150" alt="Nettoyage de la plage" class="activity_image">
+                <div class="activity_content">
+                    <h2 class="activity_title">Nettoyage de la plage</h2>
+                    <p class="activity_description">Une équipe de bénévoles a nettoyé la plage locale pour retirer les déchets plastiques et préserver la biodiversité marine.</p>
+                    <p class="activity_date_location">12 Octobre 2024 - Plage de Nice</p>
+                </div>
+            </div>
+            <div class="activity_card">
+                <img src="https://via.placeholder.com/150" alt="Reforestation" class="activity_image">
+                <div class="activity_content">
+                    <h2 class="activity_title">Reforestation</h2>
+                    <p class="activity_description">Plantation de jeunes arbres pour réhabiliter une zone déboisée et renforcer le poumon vert de notre région.</p>
+                    <p class="activity_date_location">5 Novembre 2024 - Forêt de Fontainebleau</p>
+                </div>
+            </div>
+            <div class="activity_card">
+                <img src="https://via.placeholder.com/150" alt="Sensibilisation au tri" class="activity_image">
+                <div class="activity_content">
+                    <h2 class="activity_title">Sensibilisation au tri des déchets</h2>
+                    <p class="activity_description">Atelier pratique pour apprendre à trier correctement les déchets et promouvoir le recyclage dans les foyers.</p>
+                    <p class="activity_date_location">18 Décembre 2024 - Salle des fêtes, Lyon</p>
+                </div>
+            </div>
+        </div>
+    </main>
+{% include "footer.html.twig" %}
+{% endblock %}
+

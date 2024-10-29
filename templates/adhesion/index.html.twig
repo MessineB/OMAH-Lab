@@ -1,0 +1,75 @@
+{% extends 'base.html.twig' %}
+{% block title %}Adhesion - OMAH Lab{% endblock %}
+{% block body %}
+{% block javascripts %}
+    {{ encore_entry_script_tags('adhesion') }}
+{% endblock %}
+{% include "header.html.twig" %}
+<div class="presentation_section_adhesion">
+    <h3 class="title_presentation_adhesion"> <b>Hop, Montez à Bord de l’Aventure OMAH Lab ! </b> </h3><br><br>
+
+    <div class="div_presentation_adhesion">
+        <div class="div_presentation_adhesion_text">
+            <h4 class="title_presentation_adhesion_lower"> <b>Transformez le Futur avec Nous – Adhérez Aujourd’hui ! </b> </h4>
+            <p class="text_presentation_index"><br><br>
+                Vous souhaitez <b>contribuer</b> à des initiatives qui <b>transforment les territoires</b> ? Rejoignez la <b>tribu OMAH Lab</b> et devenez un·e acteur·rice du <b>changement social et écologique</b> ! Que vous soyez intéressé·e par <b>la protection de l’environnement, l’égalité sociale, ou le développement local, votre place est ici, avec nous.</b><br><br>
+                En adhérant, vous soutenez des <b>projets concrets</b> qui font la différence, vous accédez à des <b>informations exclusives</b>, et vous partagez des moments inoubliables avec une équipe engagée à <b>transformer durablement nos territoires</b>. Alors, prêt·e à passer à l’action ?<br><br>
+            </p>
+        </div>
+        <img src="{{equipe ~ "equipe1.jpg"}}" alt="Adhésion à OMAH Lab" class="img_presentation_adhesion">
+    </div>         
+    <div class="div_presentation_adhesion">
+        <div class="div_presentation_adhesion_text">
+            <h4 class="title_presentation_adhesion_lower"> <b>Pourquoi Adhérer à OMAH Lab ? </b> </h4>
+            <ul class="list_adhesion">
+                <li><b>Soutien aux projets locaux</b>: contribuez directement à des initiatives qui <b>améliorent la qualité de vie et protègent l’environnement.</b></li>
+                <li><b>Accès exclusif</b>: recevez des <b>informations privilégiées</b> sur nos actions et bénéficiez <b>d’événements réservés aux membres.</b></li>
+                <li><b>Réseautage et collaboration</b>: rencontrez d’autres membres engagé·e·s et <b>collaborez</b> sur des projets innovants.</li>
+                <li><b>Impact positif</b>: votre adhésion renforce notre capacité à créer des <b>zones vertueuses</b> et à favoriser le <b>développement durable.</b></li>
+            </ul><br><br>
+        </div>
+        <img src="{{equipe ~ "equipe2.jpg"}}" alt="Adhésion à OMAH Lab" class="img_presentation_adhesion">
+    </div>
+
+    <div class="div_presentation_adhesion">
+        <div class="div_presentation_adhesion_text">
+            <h4 class="title_presentation_adhesion_lower"> <b>Comment Adhérer ?</b> </h4><br>
+            C’est simple et rapide ! Utilisez notre interface <b>Hello Asso</b> intégrée ci-dessous pour finaliser votre <b>adhésion en quelques clics</b>. Rejoignez-nous dès aujourd’hui et participez activement à la <b>création d’un avenir plus vert, plus juste, et plus solidaire.</b><br></p><br>
+        </div>
+        <img src="{{equipe ~ "equipe3.jpg"}}" alt="Adhésion à OMAH Lab" class="img_presentation_adhesion">
+    </div>
+
+    <div class="div_presentation_adhesion">
+        <div class="div_presentation_adhesion_text">
+            <h4 class="title_presentation_adhesion_lower"> <b>Votre contribution, notre force</b> </h4><br>
+            Chaque <b>adhésion</b> est une pierre ajoutée à l’édifice de nos <b>projets</b>. En devenant membre, vous <b>renforcez notre impact et aidez à bâtir des territoires résilients et inclusifs</b>. Ensemble, nous pouvons <b>faire bouger les choses</b> et <b>transformer nos environnements</b> pour le mieux.<br></p>
+        </div>
+        <img src="{{equipe ~ "equipe4.jpg"}}" alt="Adhésion à OMAH Lab" class="img_presentation_adhesion">
+    </div>
+</div>
+<div class="presentation_section_adhesion">
+   <h3  class="title_presentation_adhesion">OMAH Lab, c'est avant tout une aventure humaine.</h3>
+    <div id="imageplayer">
+        <img class="image-carousel" src="{{equipe ~ "jerome_image.jpg"}}" alt="Carrousel d'images">
+        <img class="image-carousel hidden" src="{{equipe ~ "pascale_image.jpg"}}" alt="Carrousel d'images">
+        <img class="image-carousel hidden" src="{{equipe ~ "marianne_image.jpg"}}" alt="Carrousel d'images">
+        <img class="image-carousel hidden" src="{{equipe ~ "anne-laure_image.jpg"}}" alt="Carrousel d'images">
+        <p class="imageplayer_text"><b>Jérôme AUDOUIN</b><br><br>
+        <strong>Président de l’association</strong> – Le sportif conscient du projet !<br><br>
+        Coordonne la stratégie et garantie l’aspect responsabilité environnementale et sociétale, avec la gestion de la base de données.</p>
+        <p class="imageplayer_text hidden"><b>Pascale JACOB</b><br><br>
+        <strong>Directrice</strong> - Notre véritable couteau suisse !<br><br>
+        Véritable source du projet, développe le cœur de l’accompagnement des éco-zones avec en bonus track la recherche de financement et les partenariats.</p>
+        <p class="imageplayer_text hidden"><b>Marianne LE BEGUEC</b><br><br>
+        <strong>Directrice administrative</strong> – L’alchimiste d’OMAH Lab !<br><br>
+        Coordonne les activités inter équipe, assure la rédaction administrative et juridique des dossiers et la gestion de projets aux valeurs environnementales et humaines</p>
+        <p class="imageplayer_text hidden"><b>Anne-Laure VICTOR</b><br><br>
+        <strong>Chargée de projets</strong> – L’ambassadrice de projets pétillants !<br><br>
+        Porte-parole de l’association, stratège de la communication digitale et  chargée des relations publiques, animatrice de terrain</p>
+    </div>
+</div>
+<div class="adhesion_helloasso">
+    <iframe id="haWidget" allowtransparency="true" scrolling="auto" src="https://www.helloasso.com/associations/omah-lab/adhesions/adhesion-omah/widget" style="width: 100%; height: 750px; border: none;"></iframe>
+</div>
+{% include "footer.html.twig" %}
+{% endblock %}
