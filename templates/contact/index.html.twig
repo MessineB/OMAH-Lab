@@ -1,0 +1,77 @@
+{# templates/contact/contact.html.twig #}
+
+{% extends 'base.html.twig' %}
+{% block title %}Contact - OMAH Lab{% endblock %}
+{% block body %}
+{% include "header.html.twig" %}
+
+<main class="main_contact">
+    <section class="contact-form-section_contact">
+        <h1>Contactez-nous</h1>
+        
+        {{ form_start(contact_form, {'attr': {'class': 'contact-form'}}) }}
+
+        <div class="form-group_contact">
+            {{ form_label(contact_form.prenom) }}
+            {{ form_widget(contact_form.prenom, {'attr': {'id': 'prenom', 'required': true}}) }}
+        </div>
+
+        <div class="form-group_contact">
+            {{ form_label(contact_form.nom) }}
+            {{ form_widget(contact_form.nom, {'attr': {'id': 'nom', 'required': true}}) }}
+        </div>
+
+        <div class="form-group_contact">
+            {{ form_label(contact_form.email) }}
+            {{ form_widget(contact_form.email, {'attr': {'id': 'email', 'required': true}}) }}
+        </div>
+
+        <div class="form-group_contact">
+            {{ form_label(contact_form.sujet) }}
+            {{ form_widget(contact_form.sujet, {'attr': {'id': 'sujet', 'required': true}}) }}
+        </div>
+
+        <div class="form-group_contact">
+            {{ form_label(contact_form.message) }}
+            {{ form_widget(contact_form.message, {'attr': {'id': 'message', 'rows': 5, 'required': true}}) }}
+        </div>
+
+        <div class="checkbox-group_contact">
+            {{ form_widget(contact_form.consent, {'attr': {'id': 'consent', 'required': true}}) }}
+            {{ form_label(contact_form.consent) }}
+        </div>
+
+        <button type="submit" class="submit-btn_contact">Envoyer</button>
+        
+        {{ form_end(contact_form) }}
+    </section>
+
+    <aside class="contact-info_contact">
+        <h2>OMAHLab</h2>
+        <p><strong>Adresse :</strong> 194 Chemin d'avène, 30100 Alès</p>
+        <p><strong>Téléphone :</strong> <a href="tel:+33984597001">+33 9 84 59 70 01</a></p>
+        <p><strong>E-mail :</strong> <a href="mailto:it@omahfab.org">it@omahfab.org</a></p>
+
+        <h3>Horaires d'accueil</h3>
+        <ul>
+            <li>Lundi de 09:00 à 16:30</li>
+            <li>Mardi de 09:30 à 16:30</li>
+            <li>Mercredi de 09:30 à 16:30</li>
+            <li>Jeudi de 09:30 à 16:30</li>
+            <li>Vendredi de 09:30 à 16:30</li>
+        </ul>
+
+        <h3>Localisation</h3>
+        <p>À Alès</p>
+        <p>À 1h de Nîmes</p>
+        <p>À 1h20 de Montpellier</p>
+
+        <div class="map_contact">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45823.67151822944!2d4.049266205370682!3d44.125045609403365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b4424287b7d8e3%3A0x4078821166b4830!2s30100%20Al%C3%A8s!5e0!3m2!1sfr!2sfr!4v1730109444531!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <img src="{{divers ~ "qr_code_omah_lab.png"}}">
+    </aside>
+</main>
+
+{% include "footer.html.twig" %}
+{% endblock %}

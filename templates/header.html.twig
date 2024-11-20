@@ -1,0 +1,92 @@
+    <header class="header">
+        <div class="header_section">
+            <div class="header_image_section">
+                <a href="{{path('app_home')}}"><img src="{{logo_site ~ "OMAH-Logo.png"}}" class="header_logo" alt="Logo de l'association OMAH Lab"></a>
+            </div>
+            <div class="header_menu_titles">
+                <div class="header_text" id="ht1">
+                    <a href="{{path('app_home')}}" class="header_title"><h3>Accueil</h3></a>
+                </div>
+                <div class="header_text ht2">
+                    <a href="{{path('app_association')}}" class="header_title"><h3>L'association</h3></a>
+                </div>
+                <div class="header_text ht3">
+                    <a href="{{path('app_cartographie')}}" class="header_title"><h3>Actualités</h3></a>
+                </div>            
+                <!-- <div class="header_text_4">
+                    <a href="{{path('app_cartographie')}}" class="header_title"><h3>Cartographie</h3></a>
+                </div>
+                {% if app.user is null %}
+                    <div class="header_text_5">
+                        <a href="{{path('app_login')}}" class="header_title"><h3>Connexion</h3></a>
+                    </div>
+                {% endif %}
+                {% if app.user %}
+                    <div class="header_text_5">
+                        <h3 class="header_title">Connecté</h3>
+                    </div>            
+                {% endif %}
+                -->
+                <div class="header_text ht4">
+                    <a href="{{path('app_contact')}}" class="header_title"><h3>Contact</h3></a>
+                </div>
+            </div>
+            <div class="header_button_section">
+                <div class="header_text ht5">
+                    <a href="{{path('app_adhesion')}}" class="header_button"><i class="fa-solid fa-address-card fa-2xl"></i></a>
+                </div>
+                <div class="header_text ht6">
+                    <a href="{{path('app_activit_')}}" class="header_button"><i class="fa-solid fa-bullhorn fa-2xl"></i></a>
+                </div>
+                <div class="header_text ht7">
+                    <button type="button" class="btn header_button" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-circle-info fa-2xl"></i></button>
+                </div>              
+            </div>
+        </div>
+    </header>
+
+    <!-- MODAL -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <section class="modal-welcome-section">
+            <h1 class="modal-title">Bienvenue sur le site de l'Association OMAH Lab</h1>
+            <p class="modal-paragraph">
+                Nous sommes ravis de vous accueillir sur le site de <strong>OMAH Lab</strong>, une association dédiée à la 
+                <strong>gestion écologique et durable des territoires</strong>. Notre mission est de promouvoir des pratiques 
+                innovantes et respectueuses de l’environnement pour une gestion harmonieuse de nos espaces naturels, agricoles et urbains.
+            </p>
+            <p class="modal-paragraph">
+                Grâce à notre expertise en <strong>écologie appliquée</strong> et en <strong>gestion durable des ressources</strong>, 
+                nous accompagnons les collectivités, les entreprises et les particuliers dans la mise en œuvre de solutions concrètes 
+                pour relever les défis environnementaux d'aujourd'hui et de demain. Que vous soyez à la recherche de conseils en 
+                <strong>biodiversité</strong>, en <strong>gestion des ressources naturelles</strong>, ou encore en 
+                <strong>aménagement éco-responsable</strong>, notre équipe d'experts est là pour vous guider.
+            </p>
+
+            <h2 class="modal-subtitle">Nos actions :</h2>
+            <ul class="modal-list">
+                <li class="modal-list-item"><strong>Diagnostic environnemental</strong> : Nous réalisons des études approfondies pour évaluer l’état écologique des territoires et proposer des solutions adaptées.</li>
+                <li class="modal-list-item"><strong>Conseil en gestion durable</strong> : Nous accompagnons les acteurs locaux dans la transition vers des pratiques de gestion plus respectueuses de l’environnement.</li>
+                <li class="modal-list-item"><strong>Formation et sensibilisation</strong> : Nous proposons des ateliers et formations pour sensibiliser aux enjeux écologiques et former aux bonnes pratiques de gestion territoriale.</li>
+                <li class="modal-list-item"><strong>Projets collaboratifs</strong> : Nous participons à des projets en partenariat avec des organismes publics, des entreprises et des associations pour co-construire des initiatives durables.</li>
+            </ul>
+
+            <p class="modal-paragraph">
+                Nous vous invitons à explorer notre site pour découvrir nos <strong>services</strong>, nos <strong>projets en cours</strong>, 
+                et comment vous pouvez vous aussi contribuer à la préservation de nos territoires. Ensemble, œuvrons pour un avenir où 
+                l'écologie est au cœur de la gestion de nos ressources et de notre bien-être.
+            </p>
+
+            <h2 class="modal-subtitle">Rejoignez-nous !</h2>
+            <p class="modal-paragraph">
+                Que vous soyez un acteur du territoire ou un particulier, OMAH Lab est là pour vous accompagner. N’hésitez pas à 
+                <a href="{{ path('app_contact') }}" class="modal-link">nous contacter</a> pour toute demande d’information ou pour rejoindre nos initiatives.
+            </p>
+        </section>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+        </div>
+        </div>
+    </div>
+</div>

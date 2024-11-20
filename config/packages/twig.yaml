@@ -1,0 +1,11 @@
+twig:
+    file_name_pattern: '*.twig'
+    globals:
+            logo_site: "/img/logo_site/"
+            carousel: "/img/carousel/"
+            divers: "/img/divers/"
+            video_a: "/video/accueil/"
+            equipe: "/img/equipe/"
+when@test:
+    twig:
+        strict_variables: true

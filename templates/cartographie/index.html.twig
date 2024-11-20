@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+{% block title %}Cartographie - OMAH Lab{% endblock %}
+{% block body %}
+{% include "header.html.twig" %}
+<div class="div_cartographie_intro">
+</div>
+<div class="div_cartographie">
+    {% if app.user is null %}
+    <div class="presentation_section_asso">
+        <h3 class="title_presentation_index"> <strong>  La cartographie est en cours de creation, merci de patienter </strong> </h3>
+        <p>Nous travaillons actuellement à l'élaboration de notre nouvelle page de cartographie, afin de vous offrir une expérience plus complète et interactive.<br>
+         Restez à l'affût, cette fonctionnalité sera bientôt disponible ! Merci de votre patience et de votre compréhension.<br>
+        </p>
+    </div>
+    {% endif %}
+    {% if app.user%}
+        <p> Bonjour, Vous etes connecté ! </p>
+        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1LwCpeeh4oSzhLbK1piy3goAsbId9kW0&ehbc=2E312F" class="cartographie_map"></iframe>
+    {% endif %}
+</div>
+{% include "footer.html.twig" %}
+{% endblock %}

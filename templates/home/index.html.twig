@@ -1,0 +1,55 @@
+{% extends 'base.html.twig' %}
+{% block title %}Accueil - OMAH Lab{% endblock %}
+{% block javascripts %}
+    {{ encore_entry_script_tags('accueil') }}
+{% endblock %}
+{% block body %}
+{% include "header.html.twig" %}
+<div class="carousel">
+    <div class="carousel_img_div">
+        <div id="video-container">
+            <!-- -->
+            <video id="video-player" autoplay muted>
+                <source src="./video/accueil/video1.mp4" rel="preload" type="video/mp4">
+                <source src="./video/accueil/video3.mp4" rel="preload" type="video/mp4">
+                <source src="./video/accueil/video4.mp4" rel="preload" type="video/mp4">
+                <source src="./video/accueil/video5.mp4" rel="preload" type="video/mp4">                                
+                <!-- Ajoutez autant de sources que nécessaire pour les différents formats vidéo -->
+            </video>
+        </div>
+    </div>
+</div>
+<div class="middle_section">
+    <div class="presentation_section">
+        <h1 id="video-title">OMAH Lab : l'innovation au cœur de la transition sociale et écologique.</h1>
+        <p class="text_presentation_index">OMAH Lab est une association dédiée à la création de zones vertueuses, alliant écologie, inclusion sociale et dynamisme économique. Nous accompagnons les collectivités et les acteurs locaux dans la conception et la mise en œuvre de projets innovants, en mutualisant les ressources et les moyens. Grâce à une approche globale qui favorise la synergie humaine, nous bâtissons ensemble un avenir durable et résilient pour toutes et tous.</p>
+    </div>
+</div>
+ <!--
+<div class="middle_to_bottom_section">
+</div>
+-->
+<div class="middle_squares_section">
+    <div class="square_section 1square"> 
+        <h3 class="title_square"><b>Nos Objectifs</b></h3>
+       <p class="text_square">Notre objectif est de donner vie à des projets qui revitalisent les territoires en créant des espaces partagés, des initiatives locales durables, et des opportunités économiques inclusives. Nous collaborons avec les collectivités pour transformer les idées en actions concrètes, en intégrant des pratiques respectueuses de l'environnement et socialement responsables.
+</p>
+    </div>
+    <div class="square_section 2square"> 
+        <h3 class="title_square"><b>Nos Valeurs</b></h3>
+        <p class="text_square">Inclusion, innovation et durabilité sont les piliers d'OMAH Lab. Nous croyons en la force de la synergie humaine pour construire des projets qui respectent les équilibres naturels et favorisent un développement harmonieux pour toutes et tous.</p>
+    </div>
+    <div class="square_section 3square"> 
+        <h3 class="title_square"><b>Notre Esprit d'equipe</b></h3>
+        <p class="text_square">Nous sommes une équipe engagée, pluridisciplinaire et collaborative, dédiée à accompagner les collectivités et les acteurs locaux dans la réalisation de projets ambitieux. Ensemble, nous cultivons l'entraide et la créativité pour construire des territoires plus justes et durables.</p>
+    </div>
+</div>
+<div class="Linkedin_section">
+    <div class='sk-ww-linkedin-page-post'>
+        <img src="{{divers ~ "inscription_logo.png"}}">
+    </div> 
+    <!-- <div class='sk-ww-linkedin-page-post' data-embed-id='25394862'></div><script src='https://widgets.sociablekit.com/linkedin-page-posts/widget.js' async defer></script> -->
+    <!-- <div class='sk-ww-linkedin-page-post' data-embed-id='25423563'></div><script src='https://widgets.sociablekit.com/linkedin-page-posts/widget.js' async defer></script> -->
+</div>
+{% include "footer.html.twig" %}
+{% endblock %}

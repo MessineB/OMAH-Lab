@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+{% block title %}Association - OMAH Lab{% endblock %}
+{% block body %}
+{% include "header.html.twig" %}
+<div class="middle_section_association">
+    <div class="presentation_section_asso">
+        <h3 class="title_presentation_index"> <b>  Bienvenue chez OMAH Lab </b> </h3>
+    <!-- IMAGE EQUIPE 1   -->
+        <div class="adhesion_image_div">
+            <p class="text_presentation_asso"><br><br>
+            <b>OMAH Lab</b> est une association éco-engagée dédiée à l’accompagnement des collectivités dans la réalisation de <b>projets d’aménagement durable</b>. Nous nous positionnons comme un <b>liant essentiel</b>, rassemblant les acteurs locaux pour créer des <b>zones vertueuses</b> qui répondent aux défis environnementaux, sociaux, et économiques d’aujourd’hui.<br><br>
+            Fondée en <b>2023</b>, notre mission est de <b>transformer les territoires</b> en favorisant des projets qui respectent l’environnement tout en dynamisant le <b>tissu social local</b>. Nous croyons fermement que chaque initiative doit intégrer <b>l’inclusion sociale</b> et <b>l’insertion professionnelle</b> pour avoir un <b>---impact positif et durable</b>.<br><br></p>
+            <img class="image-carousel" src="{{equipe ~ "equipe1.jpg"}}" alt="Carrousel d'images">
+        </div>
+        <h4 class="title_presentation_association_lower"> <b> Notre approche </b> </h4>
+
+        Chez<b> OMAH Lab</b>, nous travaillons main dans la main avec les collectivités pour <b>concevoir</b> et <b>mettre en œuvre</b> des solutions adaptées aux spécificités de chaque territoire. Nous agissons comme un <b>catalyseur</b>, structurant des projets autour des <b>ressources existantes</b> et mobilisant les <b>partenaires locaux</b> pour maximiser l’impact et la durabilité de chaque initiative.<br><br></p>
+    <!-- IMAGE EQUIPE 2   -->
+        <div class="adhesion_image_div">
+            <img class="image-carousel" src="{{equipe ~ "equipe2.jpg"}}" alt="Carrousel d'images">
+        </div>
+        <h4 class="title_presentation_association_lower"> <b> Ce que nous faisons </b> </h4>
+
+        <b>Création de zones vertueuses</b> : Nous accompagnons les collectivités dans la conception et la réalisation de projets qui minimisent <b>l’empreinte environnementale</b>, tout en améliorant la qualité de vie des habitants et en <b>régénérant et protégeant la biodiversité</b>.<br><br>
+        <b>Inclusion sociale :</b> Nous intégrons <b>l’insertion professionnelle</b> et <b>l’accessibilité</b> dans chaque projet, en collaborant avec des <b>structures locales</b> et en créant des <b>opportunités d’emploi durable</b>.<br><br>
+        <b>Mutualisation des moyens :</b>  Chez <b>OMAH Lab</b>, nous croyons en la force de la <b>mutualisation</b> pour créer des <b>synergies puissantes</b>. En partageant des services, des équipements, des compétences, et même des ressources comme les véhicules ou les abonnements, nous permettons aux collectivités de réaliser des <b>projets ambitieux et économes</b>. Cette approche réduit <b>l’empreinte environnementale</b>, évite les<b> doublons coûteux</b>, et favorise la <b>sobriété</b> et la <b>durabilité</b> en optimisant l’utilisation des <b>ressources locales</b>. La mutualisation est une réponse concrète aux défis actuels, et une clé pour créer des <b>zones autonomes et résilientes</b>.<br><br>
+        <b>Accompagnement sur mesure :</b> De <b>l’audit des besoins à la mise en œuvre concrète</b>, en passant par la <b>recherche de financements</b>, l’identification des <b>bons partenaires</b>, et l’organisation de <b>rencontres locales, OMAH Lab</b> est votre <b>partenaire stratégique</b> pour des projets qui servent le <b>bien commun</b>.<br><br></p>
+
+        <!-- IMAGE EQUIPE 3   -->
+        <div class="adhesion_image_div">
+            <img class="image-carousel" src="{{equipe ~ "equipe3.jpg"}}" alt="Carrousel d'images">
+        </div>
+        <h4 class="title_presentation_association_lower"> <b> Notre vision </b> </h4>
+        Nous aspirons à un avenir où chaque territoire, qu’il soit urbain ou rural, devient un modèle de durabilité et d’inclusion. En tant que catalyseur de changement, OMAH Lab s’efforce de construire des territoires résilients, où la préservation de l’environnement, l’insertion sociale, et le bien-être des habitants sont intimement liés.<br> <br></p>
+
+        <!-- IMAGE EQUIPE 4   -->
+        <div class="adhesion_image_div">
+            <img class="image-carousel" src="{{equipe ~ "equipe4.jpg"}}" alt="Carrousel d'images">
+        </div>
+        <h4 class="title_presentation_association_lower"> <b> Rejoignez-nous </b> </h4>
+        Que vous soyez une <b>collectivité</b>, <b>une entreprise</b>, <b>une association</b>, ou un <b>particulier</b>, <b>OMAH Lab</b> vous invite à rejoindre notre aventure. Ensemble, transformons nos territoires pour un avenir plus <b>vert</b>, plus <b>juste</b>, et plus <b>solidaire</b>.<br></p>
+    </div>
+</div>
+<div class="middle_to_bottom_section">
+<a href="{{path('app_adhesion')}}" class="header_button"><img src="{{divers ~ "adhesion.png"}}" class="header_button"></a>
+</div>
+
+{% include "footer.html.twig" %}
+{% endblock %}
