@@ -29,7 +29,7 @@ a {
 }
 
 header {
-    background-color: #FFB316;
+    background-color: #FFC500;
     font-family: 'Cantabil';
     color: whitesmoke;
     padding: 1%;
@@ -67,7 +67,7 @@ header {
 }
 .header_button {
     max-width: 60px;
-    color: #7d0f01;
+    color: #4D2557;
 }
 
 .header_button_section {
@@ -217,7 +217,7 @@ header {
 .middle_to_bottom_section {
     display: flex;
     --bs-bg-opacity: 1;
-    background-color: #7d0f01!important;
+    background-color: #43ED75!important;
     height: 70px;
     justify-content: center;
 }
@@ -420,10 +420,10 @@ header {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    background-color:#FFB316; ;
+    background-color:#43ED75; ;
 }
 .square_section {
-    background-color:#7d0f01 ;
+    background-color:#4D2557 ;
     margin-top: 20px;
     margin-right: 100px;
     max-width: 600px;
