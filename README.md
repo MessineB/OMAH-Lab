@@ -9,7 +9,7 @@ Ce dépôt contient le code source du site web de l'association OMAH Lab, visant
 ## ⚙️ Stack Technique
 
 ### 1. **Backend** : Symfony
-   - **Version Symfony** : [précisez la version, par exemple : Symfony 5.4]
+   - **Version Symfony** : Symfony 5.5
    - **Langage** : PHP 8.0+
    - **Configuration** : Projet structuré selon les standards MVC (Model-View-Controller) de Symfony pour une meilleure séparation des préoccupations.
    - **Packages et Bundles** :
@@ -101,10 +101,3 @@ Le site sera accessible à l'adresse `http://localhost:8000`.
 
 Les contributions sont les bienvenues ! Merci de créer une nouvelle branche pour chaque nouvelle fonctionnalité ou correction, puis de soumettre une pull request pour examen.
 
-## 📄 Licence
-
-Ce projet est sous licence [nom de la licence, par exemple MIT](./LICENSE).
-
----
-
-Avec ce fichier `README.md`, les visiteurs du dépôt auront une bonne compréhension de la stack technique utilisée pour le projet, ainsi que des instructions pour installer et contribuer au projet.
